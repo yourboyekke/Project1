@@ -1,0 +1,129 @@
+body {
+	background-image: url(indexBackground.jpg);
+	width: 100%;
+	background-attachment: fixed;
+}
+
+#app {
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+	font-size: 15px;
+	font-style: monospace;
+	font-weight: bold;
+	color: rgb(240, 232, 232);
+	background: url(https://image.freepik.com/free-vector/purple-3d-modern-background-design_53876-87399.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#testconfig {
+	width: 50%;
+	height: 300px;
+	position: absolute;
+	background: sandybrown;
+	z-index: 9;
+}
+
+#post_text {
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	background-color: rgb(160, 249, 255);
+	border-radius: 5px;
+	color: black;
+
+}
+
+#new_post {
+	float: right;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background: rgb(250, 230, 46);
+	border-radius: 10px;
+	font-family: monospace;
+
+}
+
+#username {
+	float: left;
+	color: rgb(250, 230, 46);
+	font-family: Arial, Helvetica, sans-serif;
+	border-width: 2px;
+	border-radius: 7px;
+	border-color: rgb(156, 158, 156);
+	opacity: 0.5;
+
+}
+
+.container {
+	margin: 10px;
+	padding: 10px;
+	border-color: rgb(250, 230, 46);
+
+}
+
+.post_title {
+	font-weight: bold;
+	font-family: monospace;
+	float: right;
+	padding-right: 10px;
+	font-size: 20px;
+	margin: 5px;
+
+
+}
+
+.post_like_button {
+	float: right;
+	color: black;
+	background-color: rgb(46, 250, 90);
+	font-size: 15px;
+	border-radius: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.post_delete_button {
+	float: right;
+	padding: 3px;
+	color: black;
+	background-color: rgb(156, 158, 156);
+	border-radius: 5px;
+	margin-left: 10cm;
+}
+
+.post_likes_container {
+	padding-left: 8cm;
+	color: white;
+	font-family: morospace;
+}
+
+.comment_input_text {
+	background-color: rgb(133, 179, 49);
+	opacity: 0.8;
+	border-radius: 5px;
+	margin-right: 100px;
+	border-color: rgb(158, 11, 158);
+	margin-top: 20px;
+
+}
+
+.new_comment {
+	margin: 10px;
+	margin-left: 150px;
+	background-color: rgb(228, 39, 228);
+	border-color: rgb(158, 11, 158);
+	border-radius: 2px;
+	float: center;
+
+}
+
+.delete_comment {
+	background-color: rgb(156, 158, 156);
+	border-radius: 5px;
+	margin-left: 150px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}

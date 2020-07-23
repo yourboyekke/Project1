@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-image: url(purple.jpg);
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .share-menu {
+            position: relative;
+            width: 220px;
+            height: 120px;
+        }
+
+        .share-menu .share-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: #00acee;
+            color: #f5f5f5;
+            font-size: 30px;
+            text-align: center;
+            line-height: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .share-menu i.fa-close {
+            display: none;
+        }
+
+        .share-menu.active i.fa-share-alt {
+            display: none;
+        }
+
+        .share-menu.active i.fa-close {
+            display: inline;
+        }
+
+        .share-menu .social-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background: #eee8e8;
+            color: #222;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            font-size: 30px;
+            transition: all 300ms ease-in-out 0ms;
+        }
+
+        .share-menu.active div:nth-child(2) {
+            top: -25%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            transition: all 300ms ease-in-out 0ms;
+        }
+
+        .share-menu.active div:nth-child(3) {
+            top: 0%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            transition: all 300ms ease-in-out 80ms;
+        }
+
+        .share-menu.active div:nth-child(4) {
+            top: 100%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            transition: all 300ms ease-in-out 160ms;
+        }
+
+        .share-menu.active div:nth-child(5) {
+            top: 125%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            transition: all 300ms ease-in-out 240ms;
+        }
+
+        .share-menu.active div:nth-child(6) {
+            top: 100%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            transition: all 300ms ease-in-out 320ms;
+        }
+
+        .share-menu.active div:nth-child(7) {
+            top: 0%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            transition: all 300ms ease-in-out 400ms;
+        }
+
+        .text-color {
+            color: white;
+        }
+
+        #yass {
+            float: left !important;
+            margin-left: 30px;
+            ;
+        }
+    </style>
+</head>
+<div id="yass">
+    <h2 class="text-color headingg">Communic8</h2>
+    <p class="text-color textt">Communic8 is a unique project created in order to prove the identity<br> and
+        knowledge of a few ambitious in
+        a good way people. This platform<br> does give you a chance to experience not only the purple world of <br>
+        satisfaction, but also the very well-known social media platform.<br> Are you ready? let's communic8!</p>
+</div>
+<div class="center">
+    <div class="share-menu">
+
+        <div class="share-btn" onclick="toggleShareMenu()">
+            <i class="fa fa-align-justify" style="margin-top: 42px;"></i>
+        </div>
+        <div class="social-btn">
+            <a href="index.html"><i class="fa fa-angellist" style="margin-top: 34px;"></i></a>
+        </div>
+        <div class="social-btn">
+            <a href="register.html"><i class="fa fa-certificate" style="margin-top: 34px;"></i></a>
+        </div>
+        <div class="social-btn">
+            <a href="login.html"><i class="fa fa-file" style="margin-top: 34px;"></i></a>
+        </div>
+        <div class="social-btn">
+            <a href="authors.html"><i class="fa fa-address-card" style="margin-top: 34px;"></i></a>
+        </div>
+        <div class="social-btn">
+            <a
+                href="https://www.youtube.com/playlist?list=PLbuCFxUj_LEthMP3RVXGLvCwBoU9GhSnc&fbclid=IwAR05Z_MTwWilRrthinDYDoZ-yfM6-hRMXVkvb2jLsSStL9cP319fN5bR8Mw"><i
+                    class="fa fa-codepen" style="margin-top: 34px;"></i></a>
+        </div>
+        <div class="social-btn">
+            <a href="rules.html"><i class="fa fa-github" style="margin-top: 34px;"></i></a>
+        </div>
+
+        <script>
+            function toggleShareMenu() {
+                document.getElementsByClassName("share-menu")[0].classList.toggle("active");
+            }
+        </script>
+
+</html>
