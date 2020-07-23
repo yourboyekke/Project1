@@ -1,0 +1,102 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			padding: 15px;
+		}
+
+		body {
+			width: 60%;
+			margin: auto;
+			background-image: url(registerBackground.jpg);
+			background-size: 100%;
+		}
+
+		#testconfig {
+			width: 50%;
+			height: 300px;
+			position: absolute;
+			background: white;
+			z-index: 9;
+		}
+
+		#app {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			left: 70%;
+			top: 50%;
+			text-align: center;
+			background-color: yellow;
+			border: 4px;
+			border-radius: 1cm;
+			width: 300px;
+			height: 200px;
+			padding-top: 60px;
+		}
+	</style>
+
+	<!-- for tests, DO NOT MODIFY next line -->
+	<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+
+<body>
+	<button id="open" onclick="showTestResults();"> Show Test</button>
+	<button id="close" onclick="hideTestResults();" style="display: none;"> Hide Test</button>
+	<!-- DO NOT MODIFY THESE LINES -->
+	<!-- START tests -->
+	<div id="tests" class="container" style="display: none;">
+		<div>
+			<button onclick="toggleTests()">ტესტების კონფიგურაციის ჩვენება/დამალვა</button>
+		</div>
+		<iframe hidden=true id="testconfig" src="./tests.html"></iframe>
+		<div id="mocha"></div>
+
+		<script src="https://unpkg.com/chai/chai.js"></script>
+		<script src="https://unpkg.com/mocha/mocha.js"></script>
+
+		<script class="mocha-init">
+			mocha.setup('bdd');
+			// mocha.checkLeaks();
+		</script>
+		<script src="./config.js"></script>
+		<script src="./tests_register.js"></script>
+	</div>
+	<!-- END tests -->
+	<!-- You can modify lines after this -->
+
+	<!-- You can modify lines after this -->
+
+	<div id="app">
+		<input id="username" type="text" placeholder="enter your username"><br><br>
+		<input id="password" type="password" placeholder="enter your password"><br><br>
+		<input id="repeat_password" type="password" placeholder="repeat your password"><br><br>
+		<button id="register" onclick="check();">Submit</button>
+
+
+	</div>
+	<script type="text/javascript" src="./database.js"></script>
+	<script type="text/javascript" src="./register.js"></script>
+	<script>
+		function showTestResults() {
+			var tests = document.getElementById("tests");
+			tests.style.display = "block";
+			var openButton = document.getElementById("open");
+			openButton.style.display = "none"
+			var closeButton = document.getElementById('close')
+			closeButton.style.display = "block";
+		}
+
+		function hideTestResults() {
+			var tests = document.getElementById("tests");
+			tests.style.display = "none";
+			var openButton = document.getElementById("open");
+			openButton.style.display = "block"
+			var closeButton = document.getElementById('close')
+			closeButton.style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
